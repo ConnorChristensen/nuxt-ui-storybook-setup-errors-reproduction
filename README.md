@@ -1,75 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Nuxt UI Storybook
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Prerequisites
 
-## Setup
+* Node: v18.17.1
+* MacOS: Sonoma 14.6.1
+* Memory: 32 GB
+* Chip: Apple M1 Max
+* Node Version Manager: 0.40.0
 
-Make sure to install the dependencies:
+## Steps
 
-```bash
-# npm
-npm install
+1. `npx nuxi@latest init nuxt-ui-storybook`
+1. choose npm as package manager
+1. `npx nuxi@latest module add storybook`
+1. `npm run dev` resulted in [Error #1](./errors/1.md)
 
-# pnpm
-pnpm install
+## Additional attempts to set up storybook
 
-# yarn
-yarn install
+These steps are done immediately after the steps in the previous section
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. `npx storybook-nuxt init`
+1. `npm run dev` resulted in [Error #2](./errors/2.md)
+1. `npm install --save-dev @storybook/vue3-vite` resulted in [Error #3](./errors/3.md)
+1. Upgrade all dependencies to the latest version (except @types/node)
+1. `npm run dev` resulted in [Error #4](./errors/4.md)
